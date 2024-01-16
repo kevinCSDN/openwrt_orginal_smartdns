@@ -37,7 +37,7 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 
 git clone https://github.com/kiddin9/openwrt-packages
 shopt -s extglob
-rm -rf openwrt-packages/!(luci-app-turboacc|shortcut-fe|https://github.com/dnsforwarder)
+rm -rf openwrt-packages/!(luci-app-turboacc|shortcut-fe|dnsforwarder)
 cp -r openwrt-packages/{luci-app-turboacc,shortcut-fe,dnsforwarder} package/
 rm -rf openwrt-packages
 
