@@ -50,7 +50,7 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 #cp -r openwrt-packages/{luci-app-turboacc,dnsforwarder} package/
 #rm -rf openwrt-packages
 
-git clone https://github.com/coolsnowwolf/luci luci1#tree/master/applications/luci-app-autoreboot
+git clone https://github.com/coolsnowwolf/luci luci1
 shopt -s extglob
 rm -rf luci1/applications/!(luci-app-autoreboot)
 cp -r luci1/applications/luci-app-autoreboot package/
