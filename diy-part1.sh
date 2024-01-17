@@ -12,15 +12,15 @@
 
 # Uncomment a feed source
 # 将原luci注释掉
-sed -i '/luci/s/^/#/' feeds.conf.default
-sed -i '/routing/s/^/#/' feeds.conf.default
-sed -i '/packages/s/^/#/' feeds.conf.default
+#sed -i '/luci/s/^/#/' feeds.conf.default
+#sed -i '/routing/s/^/#/' feeds.conf.default
+#sed -i '/packages/s/^/#/' feeds.conf.default
 
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git lede_luci https://github.com/coolsnowwolf/luci' feeds.conf.default
-sed -i '$a src-git packages https://github.com/coolsnowwolf/packages' feeds.conf.default
-sed -i '$a src-git luci https://github.com/coolsnowwolf/luci' feeds.conf.default
-sed -i '$a src-git routing https://github.com/coolsnowwolf/routing' feeds.conf.default
+#sed -i '$a src-git packages https://github.com/coolsnowwolf/packages' feeds.conf.default
+#sed -i '$a src-git luci https://github.com/coolsnowwolf/luci' feeds.conf.default
+#sed -i '$a src-git routing https://github.com/coolsnowwolf/routing' feeds.conf.default
 #sed -i '$a src-git kenzo https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 #git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 
@@ -50,11 +50,11 @@ sed -i '$a src-git routing https://github.com/coolsnowwolf/routing' feeds.conf.d
 #cp -r openwrt-packages/{luci-app-turboacc,dnsforwarder} package/
 #rm -rf openwrt-packages
 
-#git clone https://github.com/coolsnowwolf/luci #tree/master/applications/luci-app-autoreboot
-#shopt -s extglob
-#rm -rf luci/applications/!(luci-app-autoreboot)
-#cp -r luci/applications/luci-app-autoreboot package/
-#rm -rf luci
+git clone https://github.com/coolsnowwolf/luci luci1#tree/master/applications/luci-app-autoreboot
+shopt -s extglob
+rm -rf luci1/applications/!(luci-app-autoreboot)
+cp -r luci1/applications/luci-app-autoreboot package/
+rm -rf luci1
 
 
 #删除feeds自带mosdns、v2ray-geodata
