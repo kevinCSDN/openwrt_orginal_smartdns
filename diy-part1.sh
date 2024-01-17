@@ -62,7 +62,9 @@ rm -rf ./feeds/packages/net/mosdns
 rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/luci/themes/luci-theme-argon
 
-
+cd package
+git clone https://github.com/f8q8/luci-app-autoreboot.git 
+cd ..
 
 
 
@@ -87,7 +89,7 @@ git clone --depth=1 https://github.com/fw876/helloworld.git
 #git clone https://github.com/kevinCSDN/lua-maxminddb.git  #git lua-maxminddb 依赖
 #git clone https://github.com/qqhpc/jerrykuku-luci-app-vssr.git
 #git clone --depth=1 https://github.com/cfxy2010/luci-app-turboacc.git
-git clone https://github.com/f8q8/luci-app-autoreboot.git 
+
 # git clone https://github.com/kevinCSDN/luci-app-vssr-plus.git  
 
 popd
