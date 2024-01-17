@@ -50,11 +50,11 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 #cp -r openwrt-packages/{luci-app-turboacc,dnsforwarder} package/
 #rm -rf openwrt-packages
 
-git clone https://github.com/coolsnowwolf/luci luci1
-shopt -s extglob
-rm -rf luci1/applications/!(luci-app-autoreboot)
-cp -r luci1/applications/luci-app-autoreboot package/
-rm -rf luci1
+#git clone https://github.com/coolsnowwolf/luci luci1
+#shopt -s extglob
+#rm -rf luci1/applications/!(luci-app-autoreboot)
+#cp -r luci1/applications/luci-app-autoreboot package/
+#rm -rf luci1
 
 
 #删除feeds自带mosdns、v2ray-geodata
@@ -87,7 +87,7 @@ git clone --depth=1 https://github.com/fw876/helloworld.git
 #git clone https://github.com/kevinCSDN/lua-maxminddb.git  #git lua-maxminddb 依赖
 #git clone https://github.com/qqhpc/jerrykuku-luci-app-vssr.git
 #git clone --depth=1 https://github.com/cfxy2010/luci-app-turboacc.git
-
+git clone https://github.com/f8q8/luci-app-autoreboot.git 
 # git clone https://github.com/kevinCSDN/luci-app-vssr-plus.git  
 
 popd
